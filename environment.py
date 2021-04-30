@@ -16,7 +16,7 @@ class Environment:
         # len 파이썬 내장함수, 문자열, 배열등의 길이 반환
         if len(self.chart_data) > self.idx + 1:
             self.idx += 1
-            self.observation = self.chart_data.iloc[self.idx] # iloc은 DataFrame함수로, 트정 행의 데이터를 가져옴.
+            self.observation = self.chart_data.iloc[self.idx] # iloc은 DataFrame함수로, 특정 행의 데이터를 가져옴.
             return self.observation
         return None
 
